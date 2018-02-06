@@ -22,32 +22,39 @@ public class BonusApplication
 		
 		BonusApplication self = new BonusApplication();
 		
-		self.isSorted(numbers, value);
 		
-		self.findAverage(numbers, value);
-
-		
-	}
-
-	
-	
-	public boolean isSorted(int[] numbers, int value)
-	{
-		boolean desc = true;
-		
-		for(int index=0; index<value;index++)
+		boolean result = self.isSorted(numbers, value);
+		if(result == true)
 		{
-			if(numbers[index]> numbers[index-1])
-			{
-				System.out.println("array is in ascending order");
-				desc =false;
-				break;
-			}
+			System.out.println("Array is in Descending Order");
+		}
+		else
+		{
+			System.out.println("Array is in Ascending Order");				
 		}
 		
-		System.out.println("array is in descending order");
 		
-		return desc;
+		double avg = self.findAverage(numbers, value);
+		System.out.printf("Average  is  %f", avg);
+		
+	}
+
+	
+	
+	
+	
+	public boolean isSorted(int[] numbers)
+	{
+		
+		for(int index=0; index < numbers.length-1; index++)
+		{
+			if(numbers[index] > numbers[index+1])
+			{
+				return false;
+			}
+		}
+				
+		return true;
 		
 	}
 	
@@ -55,20 +62,21 @@ public class BonusApplication
 	
 	
 	
-	public double findAverage(int[] numbers, int value)
+	public double findAverage(int[] numbers)
 	{
 		int sum = 0;
 		double avg = 0;
 		
-		for(int index = 0; index<value; index++)
+		for(int index = 0; index<numbers.length-1; index++)
 		{
 			sum = sum + numbers[index];
 		}
 		
-		avg = sum / value ;
-		
-		System.out.printf("Average  is  %f", avg);
+		avg = (double)sum / value ;
+
 		return avg;
 		
 	}
+	
+	
 }
