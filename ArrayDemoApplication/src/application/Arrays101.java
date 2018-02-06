@@ -14,6 +14,7 @@ public class Arrays101 {
 		box[3]=78;
 		box[4]=65;
 		
+		Arrays101 self = new Arrays101();
 		
 		//repeat for index0...(box.length -1)
 		for(int index=0; index < box.length; index++)
