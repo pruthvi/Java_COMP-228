@@ -1,0 +1,19 @@
+package application;
+public class Arrays101 {
+
+	public static void main(String[] args)
+	{
+		//Declaration &Initializations
+		int[] box = new int[5];
+		box[0]=100;
+		box[1]=-50;
+		box[2]=36;
+		box[3]=78;
+		box[4]=65;
+		
+		for(int index=0; index < box.length; index++)
+		{
+			System.out.println("["+index+"]="+box[index]);
+		}
+	}
+}

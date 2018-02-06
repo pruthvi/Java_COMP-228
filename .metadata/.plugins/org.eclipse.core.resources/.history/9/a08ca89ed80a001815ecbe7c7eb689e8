@@ -1,0 +1,17 @@
+package maxfinder;
+
+public class MaxFinderApplication {
+
+	public static void main(String[] args) {
+
+		System.out.print("The biggest value (78,5,25): "+ max(78,5,25));
+	}
+
+	public static int max (int num1, int num2, int num3)
+	{
+		return Math.max(Math.max(num1, num2), num3);
+	}
+	
+	
+	
+}
