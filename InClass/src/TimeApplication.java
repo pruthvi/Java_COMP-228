@@ -8,7 +8,7 @@ public class TimeApplication {
 	
 	public TimeApplication()
 	{
-		this(24, 0, 0);
+		this(1, 0, 0);
 	}
 
 	//add non default constructor
