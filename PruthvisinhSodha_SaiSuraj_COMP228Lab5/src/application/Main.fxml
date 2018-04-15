@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+            <Button fx:id="_btnAddPlayer" layoutX="412.0" layoutY="180.0" mnemonicParsing="false" onAction="#onClickAddPlayer" prefHeight="25.0" prefWidth="118.0" text="Insert" />
+            <TableView layoutX="43.0" layoutY="324.0" prefHeight="200.0" prefWidth="489.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Label layoutX="43.0" layoutY="45.0" text="First Name" />
+            <Label layoutX="43.0" layoutY="80.0" text="Last Name" />
+            <Label layoutX="43.0" layoutY="116.0" text="Address" />
+            <Label layoutX="43.0" layoutY="150.0" text="Postal Code" />
+            <Label layoutX="43.0" layoutY="184.0" text="Province" />
+            <Label layoutX="43.0" layoutY="221.0" text="Phone Number" />
+            <Label layoutX="42.0" layoutY="269.0" text="Game Title" />
+            <Separator layoutY="253.0" prefHeight="3.0" prefWidth="600.0" />
+            <Separator layoutX="-1.0" layoutY="300.0" prefHeight="0.0" prefWidth="600.0" />
+            <TextField fx:id="_txtName" layoutX="139.0" layoutY="41.0" promptText="John" />
+            <TextField fx:id="_txtLast" layoutX="139.0" layoutY="76.0" promptText="Smith" />
+            <TextField fx:id="_txtAddress" layoutX="139.0" layoutY="112.0" promptText="123, Main Street" />
+            <TextField fx:id="_txtPostal" layoutX="139.0" layoutY="146.0" promptText="M1B X9Z" />
+            <TextField fx:id="_txtProv" layoutX="139.0" layoutY="180.0" promptText="ON" />
+            <TextField fx:id="_txtPhone" layoutX="139.0" layoutY="217.0" promptText="(416) 123 - 4567" />
+            <TextField fx:id="_txtGame" layoutX="139.0" layoutY="265.0" promptText="Call of Duty" />
+            <Button fx:id="_btnUpdatePlayer" layoutX="410.0" layoutY="217.0" mnemonicParsing="false" onAction="#onClickUpdatePlayer" prefHeight="25.0" prefWidth="120.0" text="Update" />
+            <Button fx:id="_btnAddGame" layoutX="407.0" layoutY="265.0" mnemonicParsing="false" onAction="#onClickAddGame" prefHeight="25.0" prefWidth="123.0" text="Add Game Name" />
+        </children>
+</AnchorPane>

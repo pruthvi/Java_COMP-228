@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayDemoApplication/ArrayDemoApplication.iml" filepath="$PROJECT_DIR$/ArrayDemoApplication/ArrayDemoApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BonusApplication/Bonus.iml" filepath="$PROJECT_DIR$/BonusApplication/Bonus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InClass/InClass.iml" filepath="$PROJECT_DIR$/InClass/InClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFXSceneBuilderApplication/JavaFXSceneBuilder.iml" filepath="$PROJECT_DIR$/JavaFXSceneBuilderApplication/JavaFXSceneBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PruthvisinhSodha_COMP228Lab1/PruthvisinhSodha_COMP228Lab1.iml" filepath="$PROJECT_DIR$/PruthvisinhSodha_COMP228Lab1/PruthvisinhSodha_COMP228Lab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PruthvisinhSodha_COMP228Lab2/PruthvisinhSodha_COMP228Lab2.iml" filepath="$PROJECT_DIR$/PruthvisinhSodha_COMP228Lab2/PruthvisinhSodha_COMP228Lab2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PruthvisinhSodha_COMP228_Test/PruthvisinhSodha_COMP228_Test.iml" filepath="$PROJECT_DIR$/PruthvisinhSodha_COMP228_Test/PruthvisinhSodha_COMP228_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RandomDemo/RandomDemo.iml" filepath="$PROJECT_DIR$/RandomDemo/RandomDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShapeApplication/ShapeApplication.iml" filepath="$PROJECT_DIR$/ShapeApplication/ShapeApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestConnection/TestConnection.iml" filepath="$PROJECT_DIR$/TestConnection/TestConnection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestConnectionFX/TestConnectionFX.iml" filepath="$PROJECT_DIR$/TestConnectionFX/TestConnectionFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maxfinder/maxfinder.iml" filepath="$PROJECT_DIR$/maxfinder/maxfinder.iml" />
+    </modules>
+  </component>
+</project>
