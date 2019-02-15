@@ -32,6 +32,11 @@ public class MainController {
 	@FXML TextField _txtGame;
 	@FXML Button _btnAddGame;
 
+	@FXML Button _btnDisplay;
+
+    @FXML TableView Table;
+
+
 	@FXML private void onClickAddPlayer() //Class for Adding Player Details
 	{
 		try (JdbcRowSet rowSet = RowSetProvider.newFactory().createJdbcRowSet())
@@ -81,11 +86,48 @@ public class MainController {
 			rowSet.setCommand("SELECT ID, title FROM Game"); // set query
 			rowSet.execute(); // execute query
 
-
 			rowSet.moveToInsertRow(); //Insert values
 			rowSet.updateString(2, _txtGame.getText()); //populating second column of the table, as id column is auto generated in table
 		    rowSet.insertRow();
 			System.out.print("Game Title is added");
+
+		}
+
+		catch(ClassNotFoundException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+			e.printStackTrace();
+		}
+		catch(SQLException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	@FXML private void onClickDisplay() //Class for Adding Player Details
+	{
+		try (JdbcRowSet rowSet = RowSetProvider.newFactory().createJdbcRowSet())
+		{
+
+			Class.forName("oracle.jdbc.OracleDriver");
+			Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@199.212.26.208:1521:sqld", "COMP214_F17_54","password");
+			System.out.println("Successfull connection");
+
+
+			Statement retrieveStatement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE );
+			ResultSet resultSet = retrieveStatement.executeQuery("select * from Player");
+
+			ResultSetMetaData metaData = resultSet.getMetaData();
+			int numberOfColumns = metaData.getColumnCount();
+
+			while(resultSet.next())
+			{
+				/* for (int i = 1; i <= numberOfColumns; i++)
+				{
+
+				} */
+			}
+
+			System.out.print("Displayed Data");  //message output for console
 
 		}
 
@@ -113,7 +155,6 @@ public class MainController {
 			rowSet.setCommand("SELECT id, first_name, last_name, address, postal_code, province, phone_number FROM PLAYER"); // set query
 			rowSet.execute(); // execute query
 
-		//	rowSet.moveToInsertRow();
 			rowSet.updateString(2, _txtName.getText()); //populating from second column of the table, as id column is auto generated in database
 			rowSet.updateString(3, _txtLast.getText()); // inserting data from text field into LastName column of the table
 			rowSet.updateString(4, _txtAddress.getText());
